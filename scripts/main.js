@@ -10,6 +10,7 @@ function setContainerToWork() {
 		myHeading.textContent = "This is a Work Container!";
 		myBody.setAttribute("bgcolor", "#7070db");
 		myImg.setAttribute("src", "img/Suitcase.png");
+		document.querySelector("title").innerText = "Work Container";
 		localStorage.setItem("test-container-mode", "work");
 }
 
@@ -17,6 +18,7 @@ function setContainerToPersonal() {
 		myHeading.textContent = "This is a Personal Container!";
 		myBody.setAttribute("bgcolor", "#b366ff");
 		myImg.setAttribute("src", "img/Fingerprint.png");
+		document.querySelector("title").innerText = "Personal Container";
 		localStorage.setItem("test-container-mode", "personal")
 }
 
@@ -24,6 +26,7 @@ function setContainerToNone() {
 		myHeading.textContent = "This is in No Container!";
 		myBody.setAttribute("bgcolor", "#ffb366");
 		myImg.setAttribute("src", "img/Firefox-Logo.png");
+		document.querySelector("title").innerText = "No Container";
 		localStorage.setItem("test-container-mode", "none");
 }
 
